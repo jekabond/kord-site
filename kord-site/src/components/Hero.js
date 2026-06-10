@@ -1,7 +1,22 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './Hero.css';
 
 const Hero = () => {
+  const [isMobile, setIsMobile] = useState(
+    () => window.matchMedia('(max-width: 768px)').matches
+  );
+
+  useEffect(() => {
+    const mq = window.matchMedia('(max-width: 768px)');
+    const handler = (e) => setIsMobile(e.matches);
+    mq.addEventListener('change', handler);
+    return () => mq.removeEventListener('change', handler);
+  }, []);
+
+  const videoSrc = isMobile
+    ? `${process.env.PUBLIC_URL}/video/vertical_hero .mp4`
+    : `${process.env.PUBLIC_URL}/video/hero.mp4`;
+
   return (
     <section className="hero" id="hero">
       <div className="hero__bg">
@@ -11,7 +26,7 @@ const Hero = () => {
           muted
           loop
           playsInline
-          src={`${process.env.PUBLIC_URL}/video/hero.mp4`}
+          src={videoSrc}
         />
         <div className="hero__overlay" />
         <div className="hero__noise" />
