@@ -22,7 +22,7 @@ const VideoSection = () => {
           muted
           loop
           playsInline
-          src="/video/videoSection.mp4"
+          src={`${process.env.PUBLIC_URL}/video/videoSection.mp4`}
         />
         <div className="video-section__overlay" />
         <button className="video-section__mute" onClick={toggleMute} aria-label="Звук">

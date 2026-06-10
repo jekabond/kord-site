@@ -45,11 +45,11 @@ const About = () => {
 
         <div className="about__image reveal reveal--right">
           <div className="about__image-wrap">
-            <img src="/pictures/kord.jpg" alt="Бійці КОРД" />
+            <img src={`${process.env.PUBLIC_URL}/pictures/kord.jpg`} alt="Бійці КОРД" />
             <div className="about__image-overlay" />
           </div>
           <div className="about__image-secondary">
-            <img src="/pictures/orden.jpg" alt="Нагорода" />
+            <img src={`${process.env.PUBLIC_URL}/pictures/orden.jpg`} alt="Нагорода" />
             <div className="about__image-overlay" />
           </div>
         </div>

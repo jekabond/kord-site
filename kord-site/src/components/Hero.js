@@ -11,7 +11,7 @@ const Hero = () => {
           muted
           loop
           playsInline
-          src="/video/hero.mp4"
+          src={`${process.env.PUBLIC_URL}/video/hero.mp4`}
         />
         <div className="hero__overlay" />
         <div className="hero__noise" />
