@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(copy \"d:\\\\coding\\\\kord-site\\\\kord-site\\\\logoSmall.svg\" \"d:\\\\coding\\\\kord-site\\\\kord-site\\\\src\\\\logoSmall.svg\")",
+      "PowerShell(Copy-Item \"d:\\\\coding\\\\kord-site\\\\kord-site\\\\logoSmall.svg\" \"d:\\\\coding\\\\kord-site\\\\kord-site\\\\src\\\\logoSmall.svg\")",
+      "Bash(npx react-scripts *)",
+      "PowerShell(Copy-Item \"d:\\\\coding\\\\kord-site\\\\kord-site\\\\aleksey-kashmar-OCYiqfNAi3c-unsplash.jpg\" \"d:\\\\coding\\\\kord-site\\\\kord-site\\\\src\\\\about-hero.jpg\")",
+      "PowerShell(Copy-Item \"d:\\\\coding\\\\kord-site\\\\kord-site\\\\alexander-jawfox-R_6kw7NUTLY-unsplash.jpg\" \"d:\\\\coding\\\\kord-site\\\\kord-site\\\\src\\\\candidate-hero.jpg\")"
+    ]
+  }
+}

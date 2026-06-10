@@ -1,0 +1,43 @@
+.social-sidebar {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  transition: background 0.3s ease, backdrop-filter 0.3s ease;
+}
+
+.social-sidebar__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background: rgba(10, 10, 10, 0.15);
+  color: rgba(170, 170, 170, 0.4);
+  border-left: 2px solid transparent;
+  backdrop-filter: blur(4px);
+  transition: color 0.2s ease, background 0.3s ease, border-color 0.3s ease;
+}
+
+.social-sidebar.scrolled .social-sidebar__btn {
+  background: rgba(20, 20, 20, 0.85);
+  color: var(--gray);
+  border-color: var(--border);
+  backdrop-filter: blur(12px);
+}
+
+.social-sidebar__btn:hover {
+  color: var(--accent) !important;
+  background: rgba(30, 24, 14, 0.95) !important;
+  border-color: var(--accent) !important;
+}
+
+@media (max-width: 768px) {
+  .social-sidebar {
+    display: none;
+  }
+}
