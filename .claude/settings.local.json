@@ -14,7 +14,8 @@
       "Bash(git add *)",
       "Bash(git commit -m ' *)",
       "Bash(rm -rf static asset-manifest.json index.html)",
-      "Bash(cp -r d:/coding/kord-site/kord-site/build/. .)"
+      "Bash(cp -r d:/coding/kord-site/kord-site/build/. .)",
+      "Bash(npm start *)"
     ]
   }
 }

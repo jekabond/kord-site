@@ -3,8 +3,8 @@ import './Stats.css';
 
 const stats = [
   { value: '2022', label: 'Рік заснування' },
-  { value: '500+', label: 'Операцій' },
-  { value: '6', label: 'Спеціалізацій' },
+  { value: '100+', label: 'Успішних виходів' },
+  { value: '6+', label: 'Бойових спеціалізацій' },
   { value: '100%', label: 'Відданість' },
 ];
 

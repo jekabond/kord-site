@@ -59,10 +59,31 @@
   color: var(--white);
 }
 
+.navbar__right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-left: auto;
+  flex-shrink: 0;
+}
+
 .navbar__cta {
   flex-shrink: 0;
   font-size: 13px;
   padding: 10px 22px;
+}
+
+.navbar__instagram {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gray-light);
+  transition: color 0.2s;
+  flex-shrink: 0;
+}
+
+.navbar__instagram:hover {
+  color: var(--white);
 }
 
 .navbar__burger {
@@ -70,7 +91,6 @@
   flex-direction: column;
   gap: 5px;
   padding: 4px;
-  margin-left: auto;
 }
 
 .navbar__burger span {
@@ -96,6 +116,10 @@
     padding: 0 20px;
   }
 
+  .navbar__inner {
+    gap: 0;
+  }
+
   .navbar__links {
     display: none;
     position: absolute;
@@ -118,8 +142,13 @@
     font-size: 15px;
   }
 
+  .navbar__right {
+    gap: 8px;
+  }
+
   .navbar__cta {
-    display: none;
+    font-size: 11px;
+    padding: 8px 14px;
   }
 
   .navbar__burger {

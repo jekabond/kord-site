@@ -32,13 +32,17 @@ const reasons = [
     title: 'Дружній колектив',
     desc: 'Братство, яке перевірено бойовими умовами. Ти не один.',
   },
-  
 ];
 
 const WhyUs = () => {
+  const bgSrc = `${process.env.PUBLIC_URL}/pictures/why.png`;
+
   return (
     <section className="why" id="why">
-      <div className="container">
+      <div className="why__bg" style={{ backgroundImage: `url(${bgSrc})` }} />
+      <div className="why__fade" />
+
+      <div className="container why__content">
         <p className="section-label reveal">Переваги</p>
         <h2 className="why__title reveal" style={{ '--reveal-delay': '0.1s' }}>ЧОМУ САМЕ МИ?</h2>
 

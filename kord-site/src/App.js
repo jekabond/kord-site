@@ -32,14 +32,14 @@ function App() {
   return (
     <div className="app">
       <Navbar />
-      <SocialSidebar />
+      {/* <SocialSidebar /> */}
       <Hero />
-      <Stats />
+      {/* <Stats /> */}
       <About />
       <Specializations />
       <Candidate />
       <WhyUs />
-      <VideoSection />
+      {/* <VideoSection /> */}
       <Join />
       <Footer />
     </div>

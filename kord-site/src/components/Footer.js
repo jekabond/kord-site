@@ -16,8 +16,8 @@ const Footer = () => {
         <nav className="footer__nav">
           <a href="#about">Про нас</a>
           <a href="#specializations">Спеціалізації</a>
-          <a href="#why">Переваги</a>
-          <a href="#join">Долучитись</a>
+          <a href="#why">Чому ми</a>
+          <a href="#join">Контакт</a>
         </nav>
 
         <div className="footer__copy">
