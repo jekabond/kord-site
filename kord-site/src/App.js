@@ -8,6 +8,7 @@ import Candidate from './components/Candidate';
 import WhyUs from './components/WhyUs';
 import VideoSection from './components/VideoSection';
 import Join from './components/Join';
+import WhyKord from './components/WhyKord';
 import Footer from './components/Footer';
 import SocialSidebar from './components/SocialSidebar';
 import './App.css';
@@ -41,6 +42,7 @@ function App() {
       <WhyUs />
       {/* <VideoSection /> */}
       <Join />
+      <WhyKord />
       <Footer />
     </div>
   );

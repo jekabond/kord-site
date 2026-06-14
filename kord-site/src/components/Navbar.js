@@ -49,7 +49,7 @@ const Navbar = () => {
           </a>
 
           <a
-            href="https://www.instagram.com/kord.ukraine/"
+            href="https://www.instagram.com/kord.diu/"
             target="_blank"
             rel="noopener noreferrer"
             className="navbar__instagram"
