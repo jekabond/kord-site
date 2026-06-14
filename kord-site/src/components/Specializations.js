@@ -3,33 +3,33 @@ import './Specializations.css';
 
 const specs = [
   {
-    icon: '🎯',
+    img: 'sniper.png',
     name: 'Снайпер',
     desc: 'Точність та терпіння. Контроль ситуації з дистанції.',
   },
   {
-    icon: '💣',
+    img: 'saper.png',
     name: 'Сапер',
     desc: 'Розмінування та знешкодження вибухових пристроїв.',
   },
   {
-    icon: '👁',
+    img: 'rozvid.png',
     name: 'Розвідник',
     desc: 'Збір інформації в умовах підвищеного ризику.',
   },
   {
-    icon: '⚓',
+    img: 'vodolaz.png',
     name: 'Водолаз',
     desc: 'Проводить операції та спеціальні місії.',
   },
   {
-    icon: '⛵',
+    img: 'skiper.png',
     name: 'Шкіпер',
     desc: 'Морські операції та десантування.',
   },
   {
-    icon: '📡',
-    name: "Оператор БПЛА",
+    img: 'bpla.png',
+    name: 'Оператор БПЛА',
     desc: 'Завжди готові до ураження.',
   },
 ];
@@ -44,12 +44,16 @@ const Specializations = () => {
         <div className="specs__grid">
           {specs.map((spec, i) => (
             <div className="specs__card reveal" key={i} style={{ '--reveal-delay': `${i * 0.1}s` }}>
-              <div className="specs__card-icon">{spec.icon}</div>
-              <h3 className="specs__card-name">{spec.name}</h3>
-              <p className="specs__card-desc">{spec.desc}</p>
-              <a href="#join" className="specs__card-link">
-                Дізнатись більше →
-              </a>
+              <div className="specs__card-body">
+                <h3 className="specs__card-name">{spec.name}</h3>
+                <p className="specs__card-desc">{spec.desc}</p>
+                <a href="#join" className="specs__card-link">
+                  Дізнатись більше →
+                </a>
+              </div>
+              <div className="specs__card-icon">
+                <img src={`${process.env.PUBLIC_URL}/pictures/icon/${spec.img}`} alt={spec.name} />
+              </div>
             </div>
           ))}
         </div>

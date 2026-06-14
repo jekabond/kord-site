@@ -24,7 +24,10 @@
   background: var(--dark);
   padding: 40px 36px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
   transition: background 0.2s;
   position: relative;
 }
@@ -33,11 +36,24 @@
   background: var(--dark2);
 }
 
+.specs__card-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 0;
+}
+
 .specs__card-icon {
-  font-size: 28px;
-  margin-bottom: 20px;
+  flex-shrink: 0;
   filter: grayscale(1);
   transition: filter 0.3s;
+}
+
+.specs__card-icon img {
+  width: 96px;
+  height: 96px;
+  object-fit: contain;
+  display: block;
 }
 
 .specs__card:hover .specs__card-icon {
