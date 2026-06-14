@@ -15,7 +15,7 @@ const About = () => {
 
   const imgSrc = isMobile
     ? `${process.env.PUBLIC_URL}/pictures/about_vertical.png`
-    : `${process.env.PUBLIC_URL}/pictures/about_horizontal.png`;
+    : `${process.env.PUBLIC_URL}/pictures/about_horizont_4k.png`;
 
   return (
     <section className="about" id="about">

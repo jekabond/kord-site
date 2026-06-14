@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './WhyUs.css';
 
 const reasons = [
@@ -35,7 +35,20 @@ const reasons = [
 ];
 
 const WhyUs = () => {
-  const bgSrc = `${process.env.PUBLIC_URL}/pictures/why.png`;
+  const [isMobile, setIsMobile] = useState(
+    () => window.matchMedia('(max-width: 768px)').matches
+  );
+
+  useEffect(() => {
+    const mq = window.matchMedia('(max-width: 768px)');
+    const handler = (e) => setIsMobile(e.matches);
+    mq.addEventListener('change', handler);
+    return () => mq.removeEventListener('change', handler);
+  }, []);
+
+  const bgSrc = isMobile
+    ? `${process.env.PUBLIC_URL}/pictures/why.png`
+    : `${process.env.PUBLIC_URL}/pictures/why_me_4k.png`;
 
   return (
     <section className="why" id="why">

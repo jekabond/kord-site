@@ -36,7 +36,7 @@
 
 .candidate__title {
   font-family: var(--font-display);
-  font-size: clamp(52px, 7vw, 88px);
+  font-size: clamp(52px, 7vw, 76px);
   line-height: 0.95;
   color: var(--white);
   margin-bottom: 48px;
@@ -52,7 +52,7 @@
   display: flex;
   align-items: flex-start;
   gap: 16px;
-  font-size: 15px;
+  font-size: 18px;
   color: var(--gray-light);
 }
 
