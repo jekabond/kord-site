@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/kord-site/static/css/main.aa673731.css",
+    "main.css": "/kord-site/static/css/main.fb24670f.css",
     "main.js": "/kord-site/static/js/main.efb9d2bf.js",
     "static/media/candidate-hero.jpg": "/kord-site/static/media/candidate-hero.841a0a11696a02288ce3.jpg",
     "static/media/logoSmall.svg": "/kord-site/static/media/logoSmall.bf9c2b094a5ce49e32072ad7f704802b.svg",
     "index.html": "/kord-site/index.html",
-    "main.aa673731.css.map": "/kord-site/static/css/main.aa673731.css.map",
+    "main.fb24670f.css.map": "/kord-site/static/css/main.fb24670f.css.map",
     "main.efb9d2bf.js.map": "/kord-site/static/js/main.efb9d2bf.js.map"
   },
   "entrypoints": [
-    "static/css/main.aa673731.css",
+    "static/css/main.fb24670f.css",
     "static/js/main.efb9d2bf.js"
   ]
 }
