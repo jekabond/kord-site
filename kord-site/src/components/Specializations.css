@@ -2,11 +2,40 @@
   padding: 120px 0;
   background: var(--dark);
   border-top: 1px solid var(--border);
+  position: relative;
+}
+
+.specs::before,
+.specs::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 120px;
+  pointer-events: none;
+}
+
+.specs::before {
+  top: 0;
+  z-index: 1;
+  background: linear-gradient(to bottom, var(--black), transparent);
+}
+
+.specs::after {
+  bottom: 0;
+  z-index: 3;
+  background: linear-gradient(to top, var(--black), transparent);
+}
+
+.specs .container {
+  position: relative;
+  z-index: 2;
 }
 
 .specs__title {
   font-family: var(--font-display);
-  font-size: clamp(48px, 7vw, 88px);
+  font-size: clamp(40px, 4vw, 78px);
+  line-height: 0.95;
   color: var(--white);
   letter-spacing: 0.03em;
   margin-bottom: 64px;

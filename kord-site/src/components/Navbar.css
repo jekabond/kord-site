@@ -69,8 +69,9 @@
 
 .navbar__cta {
   flex-shrink: 0;
-  font-size: 13px;
+  font-size: 12px;
   padding: 10px 22px;
+  height: 38px;
 }
 
 .navbar__instagram {
@@ -86,6 +87,8 @@
   color: var(--white);
 }
 
+
+
 .navbar__burger {
   display: none;
   flex-direction: column;
@@ -97,7 +100,7 @@
   display: block;
   width: 24px;
   height: 2px;
-  background: var(--white);
+  background: var(--gray-light);
   transition: all 0.3s;
 }
 

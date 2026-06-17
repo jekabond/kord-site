@@ -1,16 +1,16 @@
-.about {
-  padding: 120px 0;
+.whyKord {
+  padding: 120px 0 0;  /* ← верхний отступ (лейбл) */
   background: var(--black);
 }
 
-.about__inner {
+.whyKord__inner {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 80px;
   align-items: center;
 }
 
-.about__title {
+.whyKord__title {
   font-family: var(--font-display);
   font-size: clamp(52px, 7vw, 96px);
   line-height: 0.95;
@@ -19,14 +19,14 @@
   margin-bottom: 32px;
 }
 
-.about__desc {
+.whyKord__desc {
   font-size: 15px;
   line-height: 1.8;
   color: var(--gray-light);
   margin-bottom: 16px;
 }
 
-.about__link {
+.whyKord__link {
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -40,20 +40,20 @@
   transition: gap 0.2s;
 }
 
-.about__link:hover {
+.whyKord__link:hover {
   gap: 14px;
 }
 
-.about__image {
+.whyKord__image {
   position: relative;
 }
 
-.about__image-wrap {
+.whyKord__image-wrap {
   position: relative;
   overflow: hidden;
 }
 
-.about__image-wrap img {
+.whyKord__image-wrap img {
   width: 100%;
   height: 380px;
   object-fit: cover;
@@ -61,12 +61,12 @@
   transition: transform 0.6s ease, filter 0.4s ease;
 }
 
-.about__image-wrap:hover img {
+.whyKord__image-wrap:hover img {
   transform: scale(1.03);
   filter: grayscale(0%) brightness(0.8);
 }
 
-.about__image-overlay {
+.whyKord__image-overlay {
   position: absolute;
   inset: 0;
   background: linear-gradient(
@@ -76,13 +76,13 @@
   );
 }
 
-.about__image-secondary {
+.whyKord__image-secondary {
   position: relative;
   overflow: hidden;
   margin-top: 8px;
 }
 
-.about__image-secondary img {
+.whyKord__image-secondary img {
   width: 100%;
   height: 220px;
   object-fit: cover;
@@ -91,17 +91,17 @@
   transition: transform 0.6s ease, filter 0.4s ease;
 }
 
-.about__image-secondary:hover img {
+.whyKord__image-secondary:hover img {
   transform: scale(1.03);
   filter: grayscale(0%) brightness(0.8);
 }
 
-@media (max-width: 900px) {
-  .about__inner {
+@media (max-width: 680px) {
+  .whyKord__inner {
     grid-template-columns: 1fr;
     gap: 48px;
   }
-  .about {
-    padding: 80px 0;
+  .whyKord {
+    padding: 80px 0 0;
   }
 }

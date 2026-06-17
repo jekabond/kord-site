@@ -40,7 +40,7 @@ const About = () => {
           Перемога любить підготовку.
         </p>
         <a href="#specializations" className="about__link">
-          Підрозділ активних дій →
+          {/* Підрозділ активних дій → */}
         </a>
       </div>
     </section>

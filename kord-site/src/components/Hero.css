@@ -62,7 +62,7 @@
   line-height: 0.9;
   letter-spacing: 0.05em;
   color: var(--white);
-  margin-bottom: 20px;
+  margin-bottom: 8px;
   animation: fadeUp 0.8s ease 0.2s both;
 }
 

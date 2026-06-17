@@ -12,7 +12,7 @@
   right: 0;
   height: 100%;
   background-size: cover;
-  background-position: center top;
+  background-position: top right;
 }
 
 .why__fade {
@@ -20,12 +20,14 @@
   inset: 0;
   background: linear-gradient(
     to bottom,
+    #0a0a0a 0%,
+    transparent 22%,
     transparent 30%,
     #111111 72%
   );
 }
 .why .section-label {
-  margin-top: 120px;
+  margin-top: 80px;
 }
 
 .why__content {
@@ -36,7 +38,8 @@
 
 .why__title {
   font-family: var(--font-display);
-  font-size: clamp(48px, 7vw, 88px);
+  font-size: clamp(42px, 7vw, 88px);
+  line-height: 0.95;
   color: var(--white);
   letter-spacing: 0.03em;
   /* margin-top: 60px; */
