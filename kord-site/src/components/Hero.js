@@ -16,8 +16,8 @@ const Hero = () => {
   }, []);
 
   const videoSrc = isMobile
-    ? `${process.env.PUBLIC_URL}/video/hhero_vertical.mp4`
-    : `${process.env.PUBLIC_URL}/video/hero_horizontal.mp4`;
+    ? `${process.env.PUBLIC_URL}/video/hhero_vertical_renderd.mp4`
+    : `${process.env.PUBLIC_URL}/video/hero_horizontal_renderd.mp4`;
 
   const toggleMute = () => {
     const video = videoRef.current;
