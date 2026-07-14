@@ -59,7 +59,7 @@ const Hero = () => {
       </button>
 
       <div className="hero__content container">
-        <p className="hero__supertitle">ГУР МО України — Загін Спеціальних Дій імені</p>
+        <p className="hero__supertitle">ГУР МО України<br></br>Загін Спеціального Призначення імені</p>
         <h1 className="hero__title">Владислава<br></br>Пелешенка</h1>
         <p className="hero__subtitle">
           "КОРД"

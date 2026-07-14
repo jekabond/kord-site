@@ -15,8 +15,8 @@ const Join = () => {
   }, []);
 
   const bgSrc = isMobile
-    ? `${process.env.PUBLIC_URL}/pictures/join_vertical.png`
-    : `${process.env.PUBLIC_URL}/pictures/join.png`;
+    ? `${process.env.PUBLIC_URL}/pictures/join_vertical.jpg`
+    : `${process.env.PUBLIC_URL}/pictures/join.jpg`;
 
   return (
     <section className="join" id="join">

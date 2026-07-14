@@ -1,6 +1,6 @@
 import React from 'react';
 import './Candidate.css';
-import candidateImg from '../candidate-hero.jpg';
+
 
 const requirements = [
   'Вік 18–45 років',
@@ -9,6 +9,8 @@ const requirements = [
   'Любов до адреналіну',
   'Готовність стати частиною легенди',
 ];
+
+const candidateImg = `${process.env.PUBLIC_URL}/pictures/candidate-hero.jpg`;
 
 const Candidate = () => {
   return (

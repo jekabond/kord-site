@@ -47,8 +47,8 @@ const WhyUs = () => {
   }, []);
 
   const bgSrc = isMobile
-    ? `${process.env.PUBLIC_URL}/pictures/why.png`
-    : `${process.env.PUBLIC_URL}/pictures/why_me_4k.png`;
+    ? `${process.env.PUBLIC_URL}/pictures/why.jpg`
+    : `${process.env.PUBLIC_URL}/pictures/why_me_4k.jpg`;
 
   return (
     <section className="why" id="why">
