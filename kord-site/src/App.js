@@ -40,7 +40,6 @@ function App() {
       <Specializations />
       <Candidate />
       <WhyUs />
-      {/* <VideoSection /> */}
       <Join />
       <WhyKord />
       <Footer />

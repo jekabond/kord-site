@@ -1,8 +1,8 @@
 {
   "name": "kord-site",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
-  "homepage": "https://jekabond.github.io/kord-site",
+  "homepage": "https://kord-gur.com",
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
